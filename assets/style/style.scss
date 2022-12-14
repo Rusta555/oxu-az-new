@@ -1,0 +1,124 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+header {
+    background-image: url(../image/header_bg-16b933a63f94b28290d368006e6a4901530e656b79339c9ed6de9321eb73a30a.webp);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: relative;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            align-items: center;
+            .logo {
+                margin: 0px 25px;
+                display: flex;
+                text-align: center;
+                h1 {
+                    font-size: 25px;
+                    color: #fff;
+                }
+            }
+            nav{
+            ul {
+                display: flex;
+                li {
+                    margin-left: 20px;
+                    a {
+                        color: #fff;
+                    }
+                    i {
+                        color: #fff;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+           .search-container {
+            margin-left: 20px;
+            width: 180px;
+            height: 35px;
+            border: 1px solid #ccc;
+            form{
+                display: flex;
+                input { 
+                    background: transparent;
+                    color: #fff;
+                    width: 85%;
+                    height: 100%;
+                    outline: none;
+                    border: none;
+                    margin-left: 1px 0px;
+                    align-items: center;
+                    .fa-solid{
+                        color: #fff;
+                    }
+                }
+            }
+           } 
+
+        }
+
+        /* .menu {
+            display: flex;
+            width: 100%;
+            height: 80px;
+            background-color: rgb(66, 65, 65);
+        } */
+
+        .menu {
+            z-index: 1;
+            align-items: center;
+            display: flex;
+            width: 100%;
+            height: 50px;
+            background-color: rgb(66, 65, 65);
+            justify-content: center;
+            .items{
+                justify-content: center;
+                width: 80%;
+                display: flex;
+                li {
+                    display: flex;
+                    margin-left: 10px;
+                    justify-content: space-between;
+                    a{
+                        color: #fff;
+                    }
+                    
+                }
+            }
+        }
+}
+
+@media screen and (max-width: 760px) {
+    header {
+        nav {
+            display: none;
+        }
+        .social {
+            display: none;
+        }
+        .mo {
+            display: block !important;
+        }
+    }
+
+    
+    
+}
