@@ -26,13 +26,24 @@ header {
             height: 50px;
             align-items: center;
             .logo {
-                margin: 0px 25px;
+                width: 20%;
+                height: 40px;
                 display: flex;
-                text-align: center;
+                align-items: flex-end;
                 h1 {
-                    font-size: 25px;
+                    display: flex;
+                    font-size: 30px;
                     color: #fff;
+                    align-items: baseline;                   
                 }
+                h2 {
+                    background-image: url(../image/xb64.webp);
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    } 
             }
             nav{
             ul {
@@ -54,32 +65,37 @@ header {
             width: 180px;
             height: 35px;
             border: 1px solid #ccc;
+            display: flex;
             form{
                 display: flex;
                 input { 
                     background: transparent;
                     color: #fff;
-                    width: 85%;
+                    width: 80%;
                     height: 100%;
                     outline: none;
                     border: none;
                     margin-left: 1px 0px;
+                    align-items: center;                    
+                }
+                button{
+                    display: flex;
+                    background: transparent;
+                    width: 20%;
+                    height: 35px;
+                    border: none;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 20px;
+                    cursor: pointer;
+                    justify-content: center;
                     align-items: center;
-                    .fa-solid{
-                        color: #fff;
-                    }
+                    
                 }
             }
            } 
-
+           
         }
-
-        /* .menu {
-            display: flex;
-            width: 100%;
-            height: 80px;
-            background-color: rgb(66, 65, 65);
-        } */
 
         .menu {
             z-index: 1;
@@ -104,21 +120,49 @@ header {
                 }
             }
         }
+
+        .mobile-header{
+            background-image: url(../image/header_bg-16b933a63f94b28290d368006e6a4901530e656b79339c9ed6de9321eb73a30a.webp);
+            width: 400px;
+            display: flex;
+            display: none;
+            flex-direction: row; 
+            align-items: center;
+            position: relative;
+                .mobile-menu-bar{
+                    display: flex;
+                }
+                .mobile-logo{
+                    display: flex;
+                }
+                .mobile-search-logo{
+                    display: flex;
+                }
+           }
 }
 
-@media screen and (max-width: 760px) {
-    header {
+@media screen and (max-width: 600px) {
+    header{
+    .header {
+        display: none;
         nav {
             display: none;
         }
         .social {
             display: none;
         }
-        .mo {
-            display: block !important;
+        .search-container{
+        display: none;
         }
+        
+    }
+    .menu {
+        display: none;
     }
 
-    
+    .mobile-header {
+        display: block !important;
+    }
+    }
     
 }
